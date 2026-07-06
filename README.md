@@ -1,3 +1,5 @@
+[![Deploy to GitHub Pages](https://github.com/baskar-mookkan/doc-hub/actions/workflows/deployment.yml/badge.svg)](https://github.com/baskar-mookkan/doc-hub/actions/workflows/deployment.yml)
+
 # Website
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
