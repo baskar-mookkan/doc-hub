@@ -1,25 +1,23 @@
-yangshun:
-  name: Yangshun Tay
-  title: Ex-Meta Staff Engineer, Co-founder GreatFrontEnd
-  url: https://linkedin.com/in/yangshun
-  image_url: https://github.com/yangshun.png
+baskar-mookkan:
+  name: Baskar Mookkan
+  title: Architect
+  url: https://www.linkedin.com/in/baskarmookkan/
+  image_url: https://avatars.githubusercontent.com/u/236852203?s=400&u=392232e1d326569e148034bbe5dae3b5e3a1f766&v=4
   page: true
   socials:
-    x: yangshunz
-    linkedin: yangshun
-    github: yangshun
-    newsletter: https://www.greatfrontend.com
+    x: bhaskar_mookkan
+    linkedin: baskarmookkan
+    github: baskar-mookkan
 
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
+bmookkan:
+  name: Baskar Mookkan
+  title: Maintainer
+  url: https://www.linkedin.com/in/baskarmookkan/
+  image_url: https://avatars.githubusercontent.com/u/236852203?s=400&u=392232e1d326569e148034bbe5dae3b5e3a1f766&v=4
   page:
     # customize the url of the author page at /blog/authors/<permalink>
-    permalink: '/all-sebastien-lorber-articles'
+    permalink: '/all-bmookkan-articles'
   socials:
-    x: sebastienlorber
-    linkedin: sebastienlorber
-    github: slorber
-    newsletter: https://thisweekinreact.com
+    x: bhaskar_mookkan
+    linkedin: baskarmookkan
+    github: baskar-mookkan

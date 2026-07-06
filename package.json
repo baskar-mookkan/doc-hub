@@ -1,5 +1,5 @@
 {
-  "name": "doc-hub",
+  "name": ".",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -15,21 +15,35 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@docusaurus/core": "3.10.1",
-    "@docusaurus/faster": "3.10.1",
-    "@docusaurus/preset-classic": "3.10.1",
+    "@docusaurus/core": "^3.10.1",
+    "@docusaurus/faster": "^3.10.1",
+    "@docusaurus/preset-classic": "^3.10.1",
     "@mdx-js/react": "^3.0.0",
+    "@redocly/cli": "^2.34.0",
+    "@scalar/docusaurus": "^0.8.14",
     "clsx": "^2.0.0",
+    "docusaurus-lunr-search": "^3.6.0",
+    "docusaurus-plugin-openapi-docs": "^5.0.2",
+    "docusaurus-theme-openapi-docs": "^5.0.2",
     "prism-react-renderer": "^2.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.10.1",
-    "@docusaurus/tsconfig": "3.10.1",
-    "@docusaurus/types": "3.10.1",
+    "@docusaurus/module-type-aliases": "^3.10.1",
+    "@docusaurus/tsconfig": "^3.10.1",
+    "@docusaurus/types": "^3.10.1",
     "@types/react": "^19.0.0",
     "typescript": "~6.0.2"
+  },
+  "overrides": {
+    "gray-matter": {
+      "js-yaml": "^3.14.1"
+    },
+    "serialize-javascript": "^7.0.5",
+    "uuid": "^11.1.1",
+    "lodash": "^4.17.21",
+    "yaml": "^2.0.0"
   },
   "browserslist": {
     "production": [

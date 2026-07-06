@@ -4,15 +4,62 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
+  padding: 6rem 0 5rem;
   text-align: center;
   position: relative;
   overflow: hidden;
+  background: linear-gradient(180deg, var(--cyncly-cream) 0%, #ffffff 100%);
+  color: var(--cyncly-ink);
+}
+
+[data-theme='dark'] .heroBanner {
+  background: linear-gradient(180deg, #14152b 0%, var(--ifm-background-color) 100%);
+  color: var(--ifm-heading-color);
+}
+
+/* Soft brand glow behind the hero */
+.heroBanner::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  width: 60rem;
+  height: 60rem;
+  transform: translateX(-50%);
+  background: radial-gradient(
+    circle,
+    rgba(61, 203, 255, 0.18) 0%,
+    rgba(41, 43, 255, 0.1) 35%,
+    rgba(173, 54, 255, 0.06) 60%,
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.heroBanner .container {
+  position: relative;
+  z-index: 1;
+}
+
+.heroTitle {
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+}
+
+.heroSubtitle {
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-weight: 400;
+  max-width: 42rem;
+  margin: 0 auto 2.5rem;
+  opacity: 0.85;
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
-    padding: 2rem;
+    padding: 3.5rem 1.5rem;
   }
 }
 
@@ -20,4 +67,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }

@@ -1,30 +1,190 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * Cyncly brand theme for Docusaurus.
+ * Brand: electric blue (#292bff), warm cream neutrals, Founders Grotesk.
+ * Built on top of Infima (the classic theme's CSS framework).
  */
 
-/* You can override the default Infima variables here. */
-:root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+/* ---------------------------------------------------------------------------
+ * Typography — Founders Grotesk (self-hosted)
+ * ------------------------------------------------------------------------- */
+@font-face {
+  font-family: 'Founders Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/founders-grotesk-regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Founders Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/founders-grotesk-medium.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Founders Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/founders-grotesk-semibold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Founders Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/founders-grotesk-bold.woff2') format('woff2');
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* ---------------------------------------------------------------------------
+ * Brand palette
+ * ------------------------------------------------------------------------- */
+:root {
+  /* Cyncly brand colors */
+  --cyncly-blue: #292bff;
+  --cyncly-navy: #181a7a;
+  --cyncly-cyan: #3dcbff;
+  --cyncly-sky: #70b5ff;
+  --cyncly-purple: #ad36ff;
+  --cyncly-ink: #252525;
+  --cyncly-cream: #f9f6f4;
+  --cyncly-sand: #f5ebe1;
+
+  /* Primary color ramp (derived from --cyncly-blue) */
+  --ifm-color-primary: #292bff;
+  --ifm-color-primary-dark: #1113f0;
+  --ifm-color-primary-darker: #1012e3;
+  --ifm-color-primary-darkest: #0d0fbb;
+  --ifm-color-primary-light: #4244ff;
+  --ifm-color-primary-lighter: #5052ff;
+  --ifm-color-primary-lightest: #797bff;
+
+  /* Typography */
+  --ifm-font-family-base: 'Founders Grotesk', ui-sans-serif, system-ui,
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, 'Noto Sans', sans-serif;
+  --ifm-heading-font-family: 'Founders Grotesk', var(--ifm-font-family-base);
+  --ifm-heading-font-weight: 600;
+  --ifm-font-weight-bold: 600;
+  --ifm-code-font-size: 95%;
+
+  /* Surfaces & shape */
+  --ifm-background-color: #ffffff;
+  --ifm-background-surface-color: var(--cyncly-cream);
+  --ifm-heading-color: var(--cyncly-ink);
+  --ifm-font-color-base: #2c2c2e;
+  --ifm-navbar-background-color: #ffffff;
+  --ifm-global-radius: 0.6rem;
+  --ifm-button-border-radius: 2rem;
+  --ifm-link-color: var(--cyncly-blue);
+  --ifm-link-hover-color: var(--ifm-color-primary-darker);
+
+  --docusaurus-highlighted-code-line-bg: rgba(41, 43, 255, 0.1);
+}
+
+/* For readability in dark mode, lighten the brand blue. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #7b86ff;
+  --ifm-color-primary-dark: #5965ff;
+  --ifm-color-primary-darker: #4856ff;
+  --ifm-color-primary-darkest: #2c3bff;
+  --ifm-color-primary-light: #9da6ff;
+  --ifm-color-primary-lighter: #aeb5ff;
+  --ifm-color-primary-lightest: #d0d4ff;
+
+  --ifm-background-color: #0d0e1a;
+  --ifm-background-surface-color: #14152b;
+  --ifm-navbar-background-color: #0d0e1a;
+  --ifm-heading-color: #f3f4ff;
+  --ifm-font-color-base: #d9dbf0;
+  --ifm-link-color: var(--ifm-color-primary);
+  --ifm-link-hover-color: var(--ifm-color-primary-lighter);
+
+  --docusaurus-highlighted-code-line-bg: rgba(123, 134, 255, 0.18);
+}
+
+/* ---------------------------------------------------------------------------
+ * Global tweaks
+ * ------------------------------------------------------------------------- */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: -0.02em;
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 1px 0 rgba(37, 37, 37, 0.08);
+}
+[data-theme='dark'] .navbar {
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+.navbar__title {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* Buttons */
+.button {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+.button--primary {
+  --ifm-button-background-color: var(--cyncly-blue);
+  --ifm-button-border-color: var(--cyncly-blue);
+}
+.button:hover {
+  transform: translateY(-1px);
+}
+.button--secondary {
+  --ifm-button-background-color: var(--cyncly-ink);
+  --ifm-button-border-color: var(--cyncly-ink);
+  color: #ffffff;
+}
+.button--secondary:hover {
+  --ifm-button-background-color: #000000;
+  color: #ffffff;
+}
+
+/* Active nav / TOC links */
+.menu__link--active,
+.table-of-contents__link--active {
+  font-weight: 600;
+}
+
+/* Footer — dark navy Cyncly band */
+.footer--dark {
+  --ifm-footer-background-color: var(--cyncly-navy);
+  --ifm-footer-color: rgba(255, 255, 255, 0.82);
+  --ifm-footer-link-color: rgba(255, 255, 255, 0.72);
+  --ifm-footer-title-color: #ffffff;
+}
+.footer--dark .footer__link-item:hover {
+  color: #ffffff;
+}
+
+/* Cards */
+.card {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+/* Hero gradient accent used on the homepage */
+.cyncly-gradient-text {
+  background: linear-gradient(
+    90deg,
+    var(--cyncly-cyan),
+    var(--cyncly-blue) 45%,
+    var(--cyncly-purple)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
