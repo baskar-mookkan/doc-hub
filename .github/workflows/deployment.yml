@@ -31,7 +31,10 @@ jobs:
           cache: npm # Change to yarn or pnpm if you use them
 
       - name: Install dependencies
-        run: npm ci # Uses clean install from package-lock.json
+        run: |
+          sudo rm -rf /usr/local/bin/yarn
+          sudo rm -rf /usr/local/bin/yerna # if present
+          npm ci
 
       - name: Build website
         run: npm run build
