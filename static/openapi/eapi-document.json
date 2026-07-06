@@ -1,9 +1,15 @@
 {
- "openapi": "3.0.1",
+ "swagger": "2.0",
  "info": {
-   "title": "Sample API",
+   "title": "Sample Demo APIs",
    "version": "v1"
  },
+ "host": "baskar-mookkan.github.io",
+ "basePath": "/v2",
+ "schemes": [
+    "https",
+    "http"
+  ],
  "paths": {
    "/items": {
      "get": {
