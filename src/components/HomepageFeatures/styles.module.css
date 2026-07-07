@@ -28,15 +28,15 @@
 }
 
 .accentCyan {
-  background: linear-gradient(135deg, var(--cyncly-cyan), var(--cyncly-sky));
+  background: linear-gradient(135deg, var(--mybrand-cyan), var(--mybrand-sky));
 }
 
 .accentBlue {
-  background: linear-gradient(135deg, var(--cyncly-sky), var(--cyncly-blue));
+  background: linear-gradient(135deg, var(--mybrand-sky), var(--mybrand-blue));
 }
 
 .accentPurple {
-  background: linear-gradient(135deg, var(--cyncly-blue), var(--cyncly-purple));
+  background: linear-gradient(135deg, var(--mybrand-blue), var(--mybrand-purple));
 }
 
 .cardTitle {

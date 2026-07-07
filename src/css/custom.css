@@ -1,5 +1,5 @@
 /**
- * Cyncly brand theme for Docusaurus.
+ * Brand theme for Docusaurus.
  * Brand: electric blue (#292bff), warm cream neutrals, Founders Grotesk.
  * Built on top of Infima (the classic theme's CSS framework).
  */
@@ -40,17 +40,17 @@
  * Brand palette
  * ------------------------------------------------------------------------- */
 :root {
-  /* Cyncly brand colors */
-  --cyncly-blue: #292bff;
-  --cyncly-navy: #181a7a;
-  --cyncly-cyan: #3dcbff;
-  --cyncly-sky: #70b5ff;
-  --cyncly-purple: #ad36ff;
-  --cyncly-ink: #252525;
-  --cyncly-cream: #f9f6f4;
-  --cyncly-sand: #f5ebe1;
+  /* Brand colors */
+  --mybrand-blue: #292bff;
+  --mybrand-navy: #181a7a;
+  --mybrand-cyan: #3dcbff;
+  --mybrand-sky: #70b5ff;
+  --mybrand-purple: #ad36ff;
+  --mybrand-ink: #252525;
+  --mybrand-cream: #f9f6f4;
+  --mybrand-sand: #f5ebe1;
 
-  /* Primary color ramp (derived from --cyncly-blue) */
+  /* Primary color ramp (derived from --mybrand-blue) */
   --ifm-color-primary: #292bff;
   --ifm-color-primary-dark: #1113f0;
   --ifm-color-primary-darker: #1012e3;
@@ -70,13 +70,13 @@
 
   /* Surfaces & shape */
   --ifm-background-color: #ffffff;
-  --ifm-background-surface-color: var(--cyncly-cream);
-  --ifm-heading-color: var(--cyncly-ink);
+  --ifm-background-surface-color: var(--mybrand-cream);
+  --ifm-heading-color: var(--mybrand-ink);
   --ifm-font-color-base: #2c2c2e;
   --ifm-navbar-background-color: #ffffff;
   --ifm-global-radius: 0.6rem;
   --ifm-button-border-radius: 2rem;
-  --ifm-link-color: var(--cyncly-blue);
+  --ifm-link-color: var(--mybrand-blue);
   --ifm-link-hover-color: var(--ifm-color-primary-darker);
 
   --docusaurus-highlighted-code-line-bg: rgba(41, 43, 255, 0.1);
@@ -136,15 +136,15 @@ h3 {
   transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
 }
 .button--primary {
-  --ifm-button-background-color: var(--cyncly-blue);
-  --ifm-button-border-color: var(--cyncly-blue);
+  --ifm-button-background-color: var(--mybrand-blue);
+  --ifm-button-border-color: var(--mybrand-blue);
 }
 .button:hover {
   transform: translateY(-1px);
 }
 .button--secondary {
-  --ifm-button-background-color: var(--cyncly-ink);
-  --ifm-button-border-color: var(--cyncly-ink);
+  --ifm-button-background-color: var(--mybrand-ink);
+  --ifm-button-border-color: var(--mybrand-ink);
   color: #ffffff;
 }
 .button--secondary:hover {
@@ -158,9 +158,9 @@ h3 {
   font-weight: 600;
 }
 
-/* Footer — dark navy Cyncly band */
+/* Footer — dark navy mybrand band */
 .footer--dark {
-  --ifm-footer-background-color: var(--cyncly-navy);
+  --ifm-footer-background-color: var(--mybrand-navy);
   --ifm-footer-color: rgba(255, 255, 255, 0.82);
   --ifm-footer-link-color: rgba(255, 255, 255, 0.72);
   --ifm-footer-title-color: #ffffff;
@@ -176,12 +176,12 @@ h3 {
 }
 
 /* Hero gradient accent used on the homepage */
-.cyncly-gradient-text {
+.mybrand-gradient-text {
   background: linear-gradient(
     90deg,
-    var(--cyncly-cyan),
-    var(--cyncly-blue) 45%,
-    var(--cyncly-purple)
+    var(--mybrand-cyan),
+    var(--mybrand-blue) 45%,
+    var(--mybrand-purple)
   );
   -webkit-background-clip: text;
   background-clip: text;
