@@ -48,3 +48,5 @@ SmartyPants converts ASCII punctuation characters into "smart" typographic punct
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 
+
+{{include:./Enterprise%20CRM/Release%20Notes/2026-06.md}}
