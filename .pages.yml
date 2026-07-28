@@ -10,6 +10,7 @@ content:
     path: docs
     format: yaml-frontmatter
     subfolders: true
+    filename: "{slug}.*"
     exclude: ["_category_.json", "toc.yml"]
     fields:
       - name: title
