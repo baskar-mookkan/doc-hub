@@ -1,0 +1,117 @@
+media:
+  input: static/img
+  output: /img
+
+content:
+  # -------------------------------------------------------------------
+  # Documentation Collection
+  # -------------------------------------------------------------------
+  - name: docs
+    label: Documentation
+    type: collection
+    path: docs
+    subfolders: true
+    format: yaml-frontmatter
+    view:
+      primary: title
+      default:
+        sort: id
+        order: asc
+    fields:
+      - name: id
+        label: Doc ID / Slug
+        type: string
+        description: Unique identifier or slug path for this doc
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: description
+        label: Meta Description
+        type: string
+      - name: sidebar_label
+        label: Sidebar Label
+        type: string
+        description: Custom label shown in the sidebar navigation
+      - name: sidebar_position
+        label: Sidebar Position
+        type: number
+        description: Order position in auto-generated sidebars
+      - name: draft
+        label: Draft Status
+        type: boolean
+        default: false
+      - name: tags
+        label: Tags
+        type: list
+      - name: body
+        label: Content
+        type: rich-text
+
+  # -------------------------------------------------------------------
+  # Blog Posts Collection
+  # -------------------------------------------------------------------
+  - name: blog
+    label: Blog Posts
+    type: collection
+    path: blog
+    subfolders: true
+    format: yaml-frontmatter
+    filename: "{year}-{month}-{day}-{slug}.md"
+    view:
+      primary: title
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Post Title
+        type: string
+        required: true
+      - name: description
+        label: Meta Description
+        type: string
+      - name: date
+        label: Publication Date
+        type: date
+      - name: authors
+        label: Authors
+        type: list
+        description: Author identifiers or names
+      - name: tags
+        label: Tags
+        type: list
+      - name: image
+        label: Social Card Image
+        type: image
+      - name: draft
+        label: Draft Status
+        type: boolean
+        default: false
+      - name: body
+        label: Post Content
+        type: rich-text
+
+  # -------------------------------------------------------------------
+  # Standalone Pages Collection (src/pages)
+  # -------------------------------------------------------------------
+  - name: pages
+    label: Standalone Pages
+    type: collection
+    path: src/pages
+    format: yaml-frontmatter
+    exclude:
+      - "*.js"
+      - "*.tsx"
+      - "*.jsx"
+    fields:
+      - name: title
+        label: Page Title
+        type: string
+        required: true
+      - name: description
+        label: Meta Description
+        type: string
+      - name: body
+        label: Page Content
+        type: rich-text
