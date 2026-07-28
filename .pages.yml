@@ -59,52 +59,6 @@ content:
       sort: last_reviewed
       order: desc
 
-  - name: doc-category-crm
-    label: "Sidebar: Enterprise CRM"
-    type: file
-    path: "docs/Enterprise CRM/_category_.json"
-    fields:
-      - name: label
-        type: string
-      - name: position
-        type: number
-      - name: link
-        type: object
-        fields:
-          - name: type
-            type: string
-          - name: description
-            type: text
-
-  - name: doc-category-erp
-    label: "Sidebar: Enterprise ERP"
-    type: file
-    path: "docs/Enterprise ERP/_category_.json"
-    fields:
-      - name: label
-        type: string
-      - name: position
-        type: number
-      - name: link
-        type: object
-        fields:
-          - name: type
-            type: string
-
-  - name: doc-toc-crm
-    label: "TOC: Enterprise CRM"
-    type: file
-    path: "docs/Enterprise CRM/toc.yml"
-    fields:
-      - name: toc
-        type: object
-        list: true
-        fields:
-          - name: label
-            type: string
-          - name: path
-            type: string
-
   - name: blog
     label: Blog Posts
     type: collection
@@ -167,13 +121,4 @@ content:
         options:
           language: yaml
 
-  - name: standalone-page
-    label: "Standalone Page: markdown-page"
-    type: file
-    path: src/pages/markdown-page.mdx
-    fields:
-      - name: title
-        type: string
-      - name: body
-        label: Content
-        type: rich-text
+  
