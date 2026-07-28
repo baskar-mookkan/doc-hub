@@ -27,7 +27,7 @@ content:
       - name: product
         type: select
         options:
-          values: [Enterprise, Enterprise CRM, Enterprise ERP]
+          values: [Enterprise CRM, Enterprise ERP]
       - name: audience
         type: select
         options:
@@ -83,7 +83,7 @@ content:
       - name: product
         type: select
         options:
-          values: [Enterprise, Enterprise CRM, Enterprise ERP]
+          values: [Enterprise CRM, Enterprise ERP]
       - name: audience
         type: select
         options:
