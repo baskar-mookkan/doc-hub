@@ -18,10 +18,6 @@ content:
         sort: id
         order: asc
     fields:
-      - name: id
-        label: Doc ID / Slug
-        type: string
-        description: Unique identifier or slug path for this doc
       - name: title
         label: Title
         type: string
@@ -41,9 +37,6 @@ content:
         label: Draft Status
         type: boolean
         default: false
-      - name: tags
-        label: Tags
-        type: list
       - name: body
         label: Content
         type: rich-text
