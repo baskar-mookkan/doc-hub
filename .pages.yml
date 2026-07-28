@@ -59,46 +59,7 @@ content:
       fields: [title, product, status, last_reviewed]
       sort: last_reviewed
       order: desc
-
-  - name: blog
-    label: Blog Posts
-    type: collection
-    path: blog
-    format: yaml-frontmatter
-    subfolders: true
-    exclude: ["authors.yml", "tags.yml"]
-    fields:
-      - name: title
-        type: string
-        required: true
-      - name: description
-        type: text
-      - name: slug
-        type: string
-      - name: date
-        type: date
-      - name: authors
-        type: reference
-        options:
-          collection: blog-authors
-          multiple: true
-          value: "{path}"
-          label: "{name}"
-      - name: tags
-        type: string
-        list: true
-      - name: image
-        type: image
-      - name: hide_table_of_contents
-        type: boolean
-      - name: body
-        label: Content
-        type: rich-text
-    view:
-      primary: title
-      fields: [title, date, authors]
-      sort: date
-      order: desc
+  
   - name: docs-mdx
     label: Documentation
     type: collection
@@ -194,6 +155,7 @@ content:
       fields: [title, date, authors]
       sort: date
       order: desc
+  
 
   # authors.yml/tags.yml are keyed maps (id -> object), which Pages CMS's
   # structured field types can't model directly, so these are edited raw.
