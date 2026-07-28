@@ -10,7 +10,102 @@ content:
     path: docs
     format: yaml-frontmatter
     subfolders: true
-    filename: "{slug}.*"
+    filename: "{slug}.md"
+    exclude: ["_category_.json", "toc.yml"]
+    fields:
+      - name: title
+        type: string
+      - name: id
+        label: Doc ID
+        type: string
+      - name: sidebar_position
+        label: Sidebar Position
+        type: number
+      - name: sidebar_label
+        label: Sidebar Label
+        type: string
+      - name: product
+        type: select
+        options:
+          values: [Enterprise, Enterprise CRM, Enterprise ERP]
+      - name: audience
+        type: select
+        options:
+          values: [customer, internal, partner]
+      - name: role
+        type: string
+      - name: version
+        type: string
+      - name: owner
+        label: Owner (team)
+        type: string
+      - name: reviewer
+        type: string
+      - name: content_type
+        type: select
+        options:
+          values: [landing, feature, release-note, guide]
+      - name: status
+        type: select
+        options:
+          values: [draft, in-review, published]
+      - name: last_reviewed
+        type: date
+      - name: body
+        label: Content
+        type: rich-text
+    view:
+      primary: title
+      fields: [title, product, status, last_reviewed]
+      sort: last_reviewed
+      order: desc
+
+  - name: blog
+    label: Blog Posts
+    type: collection
+    path: blog
+    format: yaml-frontmatter
+    subfolders: true
+    exclude: ["authors.yml", "tags.yml"]
+    fields:
+      - name: title
+        type: string
+        required: true
+      - name: description
+        type: text
+      - name: slug
+        type: string
+      - name: date
+        type: date
+      - name: authors
+        type: reference
+        options:
+          collection: blog-authors
+          multiple: true
+          value: "{path}"
+          label: "{name}"
+      - name: tags
+        type: string
+        list: true
+      - name: image
+        type: image
+      - name: hide_table_of_contents
+        type: boolean
+      - name: body
+        label: Content
+        type: rich-text
+    view:
+      primary: title
+      fields: [title, date, authors]
+      sort: date
+      order: desc
+  - name: docs-mdx
+    label: Documentation
+    type: collection
+    path: docs
+    format: yaml-frontmatter
+    subfolders: true
+    filename: "{slug}.mdx"
     exclude: ["_category_.json", "toc.yml"]
     fields:
       - name: title
