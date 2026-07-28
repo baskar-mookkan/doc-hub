@@ -55,8 +55,8 @@ content:
         type: rich-text
     view:
       primary: title
-      fields: [title]
-      sort: title
+      fields: [title, product, status, last_reviewed]
+      sort: last_reviewed
       order: desc
 
   - name: blog
