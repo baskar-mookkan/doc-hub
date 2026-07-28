@@ -1,117 +1,179 @@
 media:
   input: static/img
   output: /img
+  categories: [image]
 
 content:
-  # -------------------------------------------------------------------
-  # Documentation Collection
-  # -------------------------------------------------------------------
   - name: docs
     label: Documentation
     type: collection
     path: docs
-    subfolders: true
     format: yaml-frontmatter
-    view:
-      primary: title
-      default:
-        sort: id
-        order: asc
+    subfolders: true
+    exclude: ["_category_.json", "toc.yml"]
     fields:
-      - name: id
-        label: Doc ID / Slug
-        type: string
-        description: Unique identifier or slug path for this doc
       - name: title
-        label: Title
         type: string
-        required: true
-      - name: description
-        label: Meta Description
+      - name: id
+        label: Doc ID
         type: string
-      - name: sidebar_label
-        label: Sidebar Label
-        type: string
-        description: Custom label shown in the sidebar navigation
       - name: sidebar_position
         label: Sidebar Position
         type: number
-        description: Order position in auto-generated sidebars
-      - name: draft
-        label: Draft Status
-        type: boolean
-        default: false
-      - name: tags
-        label: Tags
-        type: list
+      - name: sidebar_label
+        label: Sidebar Label
+        type: string
+      - name: product
+        type: select
+        options:
+          values: [Enterprise, Enterprise CRM, Enterprise ERP]
+      - name: audience
+        type: select
+        options:
+          values: [customer, internal, partner]
+      - name: role
+        type: string
+      - name: version
+        type: string
+      - name: owner
+        label: Owner (team)
+        type: string
+      - name: reviewer
+        type: string
+      - name: content_type
+        type: select
+        options:
+          values: [landing, feature, release-note, guide]
+      - name: status
+        type: select
+        options:
+          values: [draft, in-review, published]
+      - name: last_reviewed
+        type: date
       - name: body
         label: Content
         type: rich-text
+    view:
+      primary: title
+      fields: [title, product, status, last_reviewed]
+      sort: last_reviewed
+      order: desc
 
-  # -------------------------------------------------------------------
-  # Blog Posts Collection
-  # -------------------------------------------------------------------
+  - name: doc-category-crm
+    label: "Sidebar: Enterprise CRM"
+    type: file
+    path: "docs/Enterprise CRM/_category_.json"
+    fields:
+      - name: label
+        type: string
+      - name: position
+        type: number
+      - name: link
+        type: object
+        fields:
+          - name: type
+            type: string
+          - name: description
+            type: text
+
+  - name: doc-category-erp
+    label: "Sidebar: Enterprise ERP"
+    type: file
+    path: "docs/Enterprise ERP/_category_.json"
+    fields:
+      - name: label
+        type: string
+      - name: position
+        type: number
+      - name: link
+        type: object
+        fields:
+          - name: type
+            type: string
+
+  - name: doc-toc-crm
+    label: "TOC: Enterprise CRM"
+    type: file
+    path: "docs/Enterprise CRM/toc.yml"
+    fields:
+      - name: toc
+        type: object
+        list: true
+        fields:
+          - name: label
+            type: string
+          - name: path
+            type: string
+
   - name: blog
     label: Blog Posts
     type: collection
     path: blog
-    subfolders: true
     format: yaml-frontmatter
-    filename: "{year}-{month}-{day}-{slug}.md"
-    view:
-      primary: title
-      default:
-        sort: date
-        order: desc
+    subfolders: true
+    exclude: ["authors.yml", "tags.yml"]
     fields:
       - name: title
-        label: Post Title
         type: string
         required: true
       - name: description
-        label: Meta Description
+        type: text
+      - name: slug
         type: string
       - name: date
-        label: Publication Date
         type: date
       - name: authors
-        label: Authors
-        type: list
-        description: Author identifiers or names
+        type: reference
+        options:
+          collection: blog-authors
+          multiple: true
+          value: "{path}"
+          label: "{name}"
       - name: tags
-        label: Tags
-        type: list
+        type: string
+        list: true
       - name: image
-        label: Social Card Image
         type: image
-      - name: draft
-        label: Draft Status
+      - name: hide_table_of_contents
         type: boolean
-        default: false
       - name: body
-        label: Post Content
+        label: Content
         type: rich-text
+    view:
+      primary: title
+      fields: [title, date, authors]
+      sort: date
+      order: desc
 
-  # -------------------------------------------------------------------
-  # Standalone Pages Collection (src/pages)
-  # -------------------------------------------------------------------
-  - name: pages
-    label: Standalone Pages
-    type: collection
-    path: src/pages
-    format: yaml-frontmatter
-    exclude:
-      - "*.js"
-      - "*.tsx"
-      - "*.jsx"
+  # authors.yml/tags.yml are keyed maps (id -> object), which Pages CMS's
+  # structured field types can't model directly, so these are edited raw.
+  - name: blog-authors
+    label: Blog Authors
+    type: file
+    path: blog/authors.yml
+    fields:
+      - name: content
+        type: code
+        options:
+          language: yaml
+
+  - name: blog-tags
+    label: Blog Tags
+    type: file
+    path: blog/tags.yml
+    fields:
+      - name: content
+        type: code
+        options:
+          language: yaml
+
+  - name: standalone-page
+    label: "Standalone Page: markdown-page"
+    type: file
+    path: src/pages/markdown-page.mdx
     fields:
       - name: title
-        label: Page Title
-        type: string
-        required: true
-      - name: description
-        label: Meta Description
         type: string
       - name: body
-        label: Page Content
+        label: Content
         type: rich-text
