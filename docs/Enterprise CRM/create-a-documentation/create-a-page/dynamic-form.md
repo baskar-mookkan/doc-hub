@@ -4,12 +4,13 @@ It feels frustrating at the moment :)
 
 ## New Form Layout
 
-| <br /> | <br /> | <br /> |
-| :----- | :----- | :----- |
-| <br /> | <br /> | <br /> |
-| <br /> | <br /> | <br /> |
+| <br /> | <br /> | <br /> | <br /> |
+| :----- | :----- | :----- | :----- |
+| <br /> | <br /> | <br /> | <br /> |
+| <br /> | <br /> | <br /> | <br /> |
+| <br /> | <br /> | <br /> | <br /> |
 
-This is a new layout
+This is a new	 layout.
 
 ![Icon](media/icons8-generative-ai-50.png)
 
@@ -35,8 +36,10 @@ Hello World
 | <br /> | <br /> | <br /> |
 | <br /> | <br /> | <br /> |
 
-![Cyncly Circle](media/cyncly-circle.svg)
+<br />
 
 ***
 
 > **Warning:** Hello world
+
+![Cyn Hex](media/cyncly-hexagon-purple.svg)
