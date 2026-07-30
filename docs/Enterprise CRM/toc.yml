@@ -7,6 +7,7 @@ toc:
   - Markdown Features: Features/markdown-features.mdx
   - Dynamic Forms:
       - Dynamic Form: create-a-documentation/create-a-page/dynamic-form.md
-      - Rich Text Area: []
+      - Rich Text Area:
+          - New Congratulations: Features/congratulations.md
   - Group 1:
       - User Interface: create-a-documentation/ui.md
