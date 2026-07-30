@@ -3,8 +3,8 @@ toc:
   - Create a Blog Post: Features/create-a-blog-post.mdx
   - Create a Documentation: Features/create-a-document.mdx
   - Create a Page: Features/create-a-page.mdx
-  - Deploy your site: Features/deploy-your-site.mdx
   - Markdown Features: Features/markdown-features.mdx
+  - Deploy your site: Features/deploy-your-site.mdx
   - Dynamic Forms:
       - Dynamic Form: create-a-documentation/create-a-page/dynamic-form.md
       - Rich Text Area:
