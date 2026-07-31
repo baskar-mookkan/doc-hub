@@ -3,11 +3,8 @@ toc:
   - Create a Blog Post: Features/create-a-blog-post.mdx
   - Create a Documentation: Features/create-a-document.mdx
   - Create a Page: Features/create-a-page.mdx
-  - Markdown Features: Features/markdown-features.mdx
   - Deploy your site: Features/deploy-your-site.mdx
+  - Markdown Features: Features/markdown-features.mdx
   - Dynamic Forms:
-      - Dynamic Form: create-a-documentation/create-a-page/dynamic-form.md
-      - Rich Text Area:
-          - New Congratulations: Features/congratulations.md
-  - Group 1:
-      - User Interface Extension: create-a-documentation/ui.md
+      - Dynamic Form: create-a-documentation/create-a-page/dynamic-form.md      
+      - User Interface: create-a-documentation/ui.md  
