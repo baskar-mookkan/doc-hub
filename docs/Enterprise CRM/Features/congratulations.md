@@ -11,7 +11,7 @@ content_type: guide
 status: draft
 last_reviewed: 2026-07-28
 ---
-# Congratulations
+# congratulations.md
 
 You have just learned the **basics of Docusaurus** and made some changes to the **initial template**.
 
@@ -20,7 +20,7 @@ Docusaurus has **much more to offer**!
 | Table Column 1 | Column 2 | Column 3 |
 | -------------- | -------- | -------- |
 | Hello          | World    | !        |
-| <br />         | <br />   | <br />   |
+| asdf           | asdf     | asdf     |
 
 Have **5 more minutes**? Take a look at **\[versioning]\(../Enterprise ERP/manage-docs-versions.mdx)** and **\[i18n]\(../Enterprise ERP/translate-your-site.mdx)**.
 
