@@ -6,5 +6,7 @@ toc:
   - Deploy your site: Features/deploy-your-site.mdx
   - Markdown Features: Features/markdown-features.mdx
   - Dynamic Forms:
-      - Dynamic Form: create-a-documentation/create-a-page/dynamic-form.md      
-      - User Interface: create-a-documentation/ui.md  
+      - Dynamic Form: create-a-documentation/create-a-page/dynamic-form.md
+      - User Interface: create-a-documentation/ui.md
+      - Test Page Validation:
+          - Test Page: dynamic-forms/test-page-validation/test-page.md
