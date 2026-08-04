@@ -10,3 +10,4 @@ toc:
       - User Interface: create-a-documentation/ui.md
       - Test Page Validation:
           - Test Page: dynamic-forms/test-page-validation/test-page.md
+  - congratulations.md: Features/congratulations.md
