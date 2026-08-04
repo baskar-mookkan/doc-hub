@@ -4,6 +4,8 @@ The User Interface page guides you through every component of the form builder, 
 
 <br />
 
+![large form google forms builder b79d8b1e6c](/img/congratulations-2/large-form-google-forms-builder-b79d8b1e6c.png)
+
 ## Building Your Form
 
 Use the main canvas area to construct your form step by step. Begin by adding a title and description for context.
