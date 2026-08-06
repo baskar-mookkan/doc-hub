@@ -17,6 +17,12 @@ You have just learned the **basics of Docusaurus** and made some changes to the 
 
 Docusaurus has **much more to offer**!
 
+<br />
+
+<br />
+
+![gcp](/img/ui/gcp.png)
+
 | Table Column 1 | Column 2 | Column 3 |
 | -------------- | -------- | -------- |
 | Hello          | World    | !        |
