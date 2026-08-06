@@ -36,22 +36,32 @@ In this configuration, code deploys to the `dev` target automatically. Promotion
 
 Targets are the specific destinations for your application, such as Google Kubernetes Engine (GKE) clusters or Cloud Run services. You should use separate targets for each environment to isolate workloads.
 
-*   **Approval gates**: You can implement approval gates for sensitive environments to ensure compliance and stability before a rollout occurs.
-*   **Canary releases**: You can gradually shift a percentage of traffic to a new version to test performance before you complete a full rollout.
-*   **Parallel deployments**: You can deploy your site to multiple clusters or regions simultaneously.
+* **Approval gates**: You can implement approval gates for sensitive environments to ensure compliance and stability before a rollout occurs.
+
+* **Canary releases**: You can gradually shift a percentage of traffic to a new version to test performance before you complete a full rollout.
+
+* **Parallel deployments**: You can deploy your site to multiple clusters or regions simultaneously.
 
 ## Promote and roll back releases
 
 You can manage the lifecycle of a release through the Google Cloud Console or the command line.
 
-*   **Promotions**: When a release meets your criteria, promote it to the next target in the sequence. Each promotion triggers a rollout to the next environment.
-*   **Rollbacks**: If you encounter issues in a specific environment, you can revert to the last successful deployment.
-*   **Notifications**: You can configure Pub/Sub events to receive status updates on deployments, approvals, and failures.
+* **Promotions**: When a release meets your criteria, promote it to the next target in the sequence. Each promotion triggers a rollout to the next environment.
+
+* **Rollbacks**: If you encounter issues in a specific environment, you can revert to the last successful deployment.
+
+* **Notifications**: You can configure Pub/Sub events to receive status updates on deployments, approvals, and failures.
 
 ## Deployment best practices
 
 To maintain a secure and auditable delivery process, follow these practices:
 
-*   Store container images in the **Artifact Registry** and reference them directly in your pipeline.
-*   Integrate with **Cloud Build** for continuous integration to produce artifacts that trigger **Cloud Deploy** automatically.
-*   Monitor deployments with **Cloud Logging** and **Cloud Audit Logs** to maintain traceability of all changes.
+* Store container images in the **Artifact Registry** and reference them directly in your pipeline.
+
+* Integrate with **Cloud Build** for continuous integration to produce artifacts that trigger **Cloud Deploy** automatically.
+
+* Monitor deployments with **Cloud Logging** and **Cloud Audit Logs** to maintain traceability of all changes.
+
+<br />
+
+![gcp](/img/first-documentation-project/gcp.png)
