@@ -12,5 +12,5 @@ toc:
           - Test Page: dynamic-forms/test-page-validation/test-page.md
   - congratulations.md: Features/congratulations.md
   - Deployment:
-      - deploy-site-in-azure.md: deploy-your-site/azure-deployment/deploy-site-in-azure.md
+      - Azure Deployment: deploy-your-site/azure-deployment/deploy-site-in-azure.md
       - Deploy your site: Features/deploy-your-site.mdx
