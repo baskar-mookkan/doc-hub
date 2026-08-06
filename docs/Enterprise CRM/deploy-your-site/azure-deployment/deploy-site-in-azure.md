@@ -4,6 +4,8 @@ You can deploy your Docusaurus site as a robust and scalable Static Web App usin
 
 <br />
 
+![gcp](/img/testing-images/gcp.png)
+
 ## Prerequisites
 
 Before starting the deployment process, ensure you have the following items ready:
