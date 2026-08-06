@@ -1,6 +1,3 @@
----
-title: Testing
----
 # Testing
 
 Hello
