@@ -2,6 +2,10 @@
 
 This guide walks you through the necessary validation steps for a dynamic test page, ensuring that all form components and submission logic operate correctly before deployment. You must perform thorough testing to guarantee data integrity across various user scenarios.
 
+<br />
+
+![gcp](/img/testing-images/gcp.png)
+
 ## Running Core Validation Checks
 
 Before attempting any advanced functionality tests, you must complete these basic checks to ensure the foundation of the form operates as expected.
