@@ -4,7 +4,9 @@ This guide walks you through the necessary validation steps for a dynamic test p
 
 <br />
 
-![gcp](/img/testing-images/gcp.png)
+<br />
+
+![4 16 scaled](/img/testing-images/4-16-scaled.webp)
 
 ## Running Core Validation Checks
 
