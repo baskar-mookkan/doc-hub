@@ -2,10 +2,6 @@
 
 You can deploy your Docusaurus site as a robust and scalable Static Web App using Microsoft Azure. This guide walks you through connecting your existing repository to Azure, configuring the necessary build steps, and ensuring continuous deployment with minimal effort.
 
-<br />
-
-![gcp](/img/testing-images/gcp.png)
-
 ## Prerequisites
 
 Before starting the deployment process, ensure you have the following items ready:
