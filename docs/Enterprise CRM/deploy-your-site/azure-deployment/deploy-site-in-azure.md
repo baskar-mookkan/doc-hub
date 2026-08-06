@@ -1,6 +1,3 @@
----
-title: Deploying Site in Azure
----
 # Deploying Site in Azure
 
 You can deploy your Docusaurus site as a robust and scalable Static Web App using Microsoft Azure. This guide walks you through connecting your existing repository to Azure, configuring the necessary build steps, and ensuring continuous deployment with minimal effort.
