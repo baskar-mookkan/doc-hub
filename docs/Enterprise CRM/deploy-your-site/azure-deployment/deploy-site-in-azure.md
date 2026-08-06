@@ -4,7 +4,7 @@ You can deploy your Docusaurus site as a robust and scalable Static Web App usin
 
 <br />
 
-![gcp](/img/testing-images/gcp.png)
+![large form google forms builder b79d8b1e6c](/img/demo-assets/large-form-google-forms-builder-b79d8b1e6c.png)
 
 ## Prerequisites
 
