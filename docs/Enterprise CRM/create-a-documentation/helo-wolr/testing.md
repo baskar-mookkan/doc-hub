@@ -1,5 +1,5 @@
 ---
-title: Testin
+title: Testing
 ---
 # Testing
 
