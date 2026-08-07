@@ -64,4 +64,3 @@ To maintain a secure and auditable delivery process, follow these practices:
 
 <br />
 
-![gcp](/img/first-documentation-project/gcp.png)
