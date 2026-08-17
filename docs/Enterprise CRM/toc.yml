@@ -5,3 +5,6 @@ toc:
   - Create a Page: Features/create-a-page.mdx
   - Markdown Features: Features/markdown-features.mdx
   - Deploy your site: Features/deploy-your-site.mdx
+  - Dynamic Forms:
+      - Dynamic Web Page:
+          - Dynamic Web Page: dynamic-forms/dynamic-web-page/dynamic-web-page.md
