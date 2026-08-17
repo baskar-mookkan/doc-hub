@@ -11,11 +11,17 @@ content_type: guide
 status: draft
 last_reviewed: 2026-07-28
 ---
-# congratulations.md
+# Congratulations
 
 You have just learned the **basics of Docusaurus** and made some changes to the **initial template**.
 
 Docusaurus has **much more to offer**!
+
+<br />
+
+<br />
+
+![gcp](/img/ui/gcp.png)
 
 | Table Column 1 | Column 2 | Column 3 |
 | -------------- | -------- | -------- |

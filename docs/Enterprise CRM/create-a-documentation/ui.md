@@ -4,7 +4,9 @@ The User Interface page guides you through every component of the form builder, 
 
 <br />
 
-![large form google forms builder b79d8b1e6c](/img/congratulations-2/large-form-google-forms-builder-b79d8b1e6c.png)
+<br />
+
+![gcp](/img/ui/gcp.png)
 
 ## Building Your Form
 
