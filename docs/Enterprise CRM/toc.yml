@@ -1,7 +1,6 @@
 toc:
   - Congratulations: Features/congratulations.mdx
   - Create a Blog Post: Features/create-a-blog-post.mdx
-  - Create a Documentation: Features/create-a-document.mdx
   - Create a Page: Features/create-a-page.mdx
   - Deploy your site: Features/deploy-your-site.mdx
   - Markdown Features: Features/markdown-features.mdx
@@ -14,3 +13,4 @@ toc:
   - Create a Documentation:
       - Open Knowledge Format:
           - Open Knowledge format v0.2 tackles agentic trust: create-a-documentation/open-knowledge-format/open-knowledge-format-v0-2-tackles-agentic-trust.md
+      - Create a Documentation: Features/create-a-document.mdx
