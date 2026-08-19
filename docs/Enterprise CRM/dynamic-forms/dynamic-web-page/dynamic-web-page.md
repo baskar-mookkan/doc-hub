@@ -2,6 +2,10 @@
 
 Before attempting any advanced functionality tests, you must complete these basic checks to ensure the foundation of the form operates as expected.
 
+***
+
+<br />
+
 ### **Verify Field Requirements**
 
 1. **Required Fields:** Try submitting the page while leaving a mandatory field blank. You should see clear, actionable error messages guiding you toward correction.
