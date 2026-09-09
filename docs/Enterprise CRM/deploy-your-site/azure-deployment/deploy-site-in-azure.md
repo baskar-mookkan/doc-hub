@@ -12,7 +12,7 @@ Before starting the deployment process, ensure you have the following items read
 
 * An active GitHub account containing your Docusaurus source code repository.
 
-* An active Microsoft Azure subscription.
+* An active Microsoft Azure subscription. 
 
 * Administrative access rights to create resources within Azure.
 
